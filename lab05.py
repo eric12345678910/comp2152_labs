@@ -1,10 +1,8 @@
 # Import the random library to use for the dice later
 import random
 
-
 # Put all the functions into another file and import them
 import functions_lab05
-
 
 # Game Flow
 # Define two Dice
@@ -194,8 +192,6 @@ if not input_invalid:
     combat_strength += crazy_level
     print(f"Your health points are now {health_points}")
     print(f"Your combat strength is now {combat_strength}")
-
-
 
 
     # Fight Sequence
