@@ -3,7 +3,6 @@ class Person:
         self.__name = name
         self.__age = age
         self.__height = height
-
         self.public_prop = "I'm public"
 
         print("Constructing the Person object")
@@ -13,21 +12,40 @@ class Person:
         print("About to delete the person object")
         
 
-    # Getter
-    def get_name(self):
-        return self.__name
+    # Baisc Getters / Setters
+    #def get_name(self):
+    #    return self.__name
     
-    # Setter
+    #def set_name(self, name):
+    #    self.__name = name
+
+    # Magic Getters / Setters
+    # NAME
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
     def set_name(self, name):
         self.__name = name
 
-    # Magic Getter
-    def get_name(self):
-        return self.__name
+    #AGE
+    @property
+    def age(self):
+        return self.__age
     
-    # Magic Setter
-    def set_name(self, name):
-        self.__name = name
+    @age.setter
+    def age(self, age):
+        self.__age = age
+
+    # HEIGHT
+    @property
+    def height(self):
+        return self.__height
+    
+    @age.setter
+    def height(self, height):
+        self.__height = height
 
     
 
