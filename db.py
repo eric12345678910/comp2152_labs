@@ -39,4 +39,4 @@ id = input("Enter an ID: ")
 query3 = "SELECT * FROM demo WHERE ID > ?"
 # Pass additonal argument as a tuple
 #db_cursor.execute(query3, (id))
-#function.query_responder(db_cursor, 'fetchall')
+#functiogn.query_responder(db_cursor, 'fetchall')
